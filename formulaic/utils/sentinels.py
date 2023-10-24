@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import Dict
-from typing_extensions import Self
+#from typing_extensions import Self
 
 
 class _MissingType:
@@ -18,10 +18,10 @@ class _MissingType:
     def __repr__(self) -> str:
         return "MISSING"
 
-    def __copy__(self) -> Self:
+    def __copy__(self):
         return self
 
-    def __deepcopy__(self, memo: Dict) -> Self:
+    def __deepcopy__(self, memo: Dict):
         return self
 
 
